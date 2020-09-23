@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <script>
+        function validate(){
+            var username=document.getElementById('username').value;
+            var password=document.getElementById('password').value;
+            var email=document.getElementById('email').value;
+            var phonenumber=document.getElementById('phone').value;
+                        if(username=" "||username.length<5||username.length>15){
+
+                for(const i in usernames.js){
+                    if(usernames[i].username!=username){
+                        sublist.push(usernames[i]);
+                         
+                         function printUser(username){
+                         document.getElementById("username").innerHTML = this.UserName}
+
+
+                    }
+                    else{
+                        alert("choose a different name");
+                    }
+                }
+
+
+
+                alert('enter valid name');
+                
+            }
+            else if(password=""||(!password.match(/^(?=.\d)(?=.[a-z])(?=.[a-zA-Z]).{8,}$/))) {
+                alert('enter valid password');
+            }
+            if(email=""||email.match(/[A-z0-9. _%+-]+@[A-z.-]+\.[A-Z]/)){
+                alert('enter valid name');
+            }
+            if(phonenumber=""||(!phonenumber.match(/\d{10}/))){
+                alert('enter valid name');
+            }
+            else{
+                alert("");
+            }
+            }
+
+        
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+                      
+            UserName <input type="text" name="username" id="username" placeholder=" "><br>
+            
+            password <input type="password" name="password" id="password" ><br>
+            email <input type="email" name="email" id="email"><br>
+            phone <input type="number" name="phonenumber" id="phone"><br>
+            
+            <input type="submit" name="submit" id="submit" onclick="validate()">
+        </form>
+    </div>
+    
+</body>
+</html>

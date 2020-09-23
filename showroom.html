@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function category(){
+            var name = document.getElementById("myList").value;
+            if(name == "LAPTOP")
+            {
+                var categoryName = ['LAPTOP','MOBILE','TV'];
+                
+                document.getElementById("display").innerHTML = categoryName.join("<br>");
+            }
+            else if(name == "MOBILE")
+            {
+                var categoryName = ['IPHONE','SAMSUNG', 'SONY'];
+                document.getElementById("display").innerHTML = categoryName.join("<br>");
+            }
+            else if(name == "TV")
+            {
+                var categoryName = ['LG','PANASONIC','ONIDA'];
+                document.getElementById("display").innerHTML = categoryName.join("<br>");
+            }
+          
+        }
+    </script>
+</head>
+<body>
+    
+        <div>
+    DEVICES <select id="myList" onchange="category()">
+        <option selected="" value="Default">--Select--</option>
+        <option value="LAPTOP">LAPTOP</option>
+        <option value="MOBILE">MOBILE</option>
+        <option value="TV">TV</option>
+
+     
+    </select>
+   
+</div>
+<br>
+<div > <span id="display"></span></div>
+
+</body>
+</html>
+
+
+
+
+
